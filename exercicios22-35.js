@@ -189,19 +189,19 @@ imparPar(4)
 // - Se a media for maior e igual a cinco e menor que 7 - Recuperação
 // - Se a media for menor que 5 - Reprovado|
 console.log('Exercício 34:')
-function passouDeAno(nota){
-    if((nota >= 7 && nota <= 10)){
-        console.log(`Nota ${nota} - Aprovado`)
-    }else if((nota >= 5 && nota < 7)){
-        console.log(`Nota ${nota} - Recuperação`)
-    }else if ((nota < 5 && nota >= 0)){
-        console.log(`Nota ${nota} - Reprovado`)
+function passouDeAno(nota1, nota2, nota3){
+    let media = (nota1 + nota2 + nota3) / 3
+    if((media >= 7 && media <= 10)){
+        console.log(`Média ${media} - Aprovado`)
+    }else if((media >= 5 && media < 7)){
+        console.log(`Média ${media} - Recuperação`)
+    }else if ((media < 5 && media >= 0)){
+        console.log(`Média ${media} - Reprovado`)
     }else{
-        console.log(`Nota ${nota} - Inválido`)
+        console.log(`Média ${media} - Inválido`)
     }
 }
-
-passouDeAno(8)
+passouDeAno(8, 9, 10)
 
 //Exercício 35
 //Crie uma função que recebe o ano de nascimento da pessoa informando se ela é maior de idade ou menor.
